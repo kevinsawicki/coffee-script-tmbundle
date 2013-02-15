@@ -316,6 +316,11 @@
 		<dict>
 			<key>captures</key>
 			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.coffee</string>
+				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
@@ -324,14 +329,9 @@
 				<key>3</key>
 				<dict>
 					<key>name</key>
-					<string>entity.name.function.coffee</string>
-				</dict>
-				<key>4</key>
-				<dict>
-					<key>name</key>
 					<string>variable.parameter.function.coffee</string>
 				</dict>
-				<key>5</key>
+				<key>4</key>
 				<dict>
 					<key>name</key>
 					<string>storage.type.function.coffee</string>
@@ -339,7 +339,7 @@
 			</dict>
 			<key>match</key>
 			<string>(?x)
-				(\s*)
+				(?<=^|\s)
 				(?=@?[a-zA-Z\$_])
 				(
 					@?[a-zA-Z\$_](\w|\$|:|\.)*\s*
